@@ -7,14 +7,19 @@ variable "regions" {
 
 variable "access_key" {
   type = string
+  ephemeral = true
 }
 
 variable "secret_key" {
   type = string
+  sensitive = true
+  ephemeral = true
 }
 
 variable "session_token" {
   type = string
+  sensitive = true
+  ephemeral = true
 }
 
 variable "default_tags" {
