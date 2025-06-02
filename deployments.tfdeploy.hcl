@@ -14,18 +14,17 @@ deployment "development" {
     session_token = store.varset.tokens.AWS_SESSION_TOKEN
     default_tags   = { stacks-preview-example = "lambda-component-expansion-stack" }
   }
-  destroy = true
 }
 
-deployment "development-west" {
-  inputs = {
-    regions        = ["us-west-1"]
-    access_key = store.varset.tokens.AWS_ACCESS_KEY_ID    
-    secret_key = store.varset.tokens.AWS_SECRET_ACCESS_KEY
-    session_token = store.varset.tokens.AWS_SESSION_TOKEN
-    default_tags   = { stacks-preview-example = "lambda-component-expansion-stack" }
-  }
-}
+#deployment "development-west" {
+#  inputs = {
+#    regions        = ["us-west-1"]
+#    access_key = store.varset.tokens.AWS_ACCESS_KEY_ID    
+#    secret_key = store.varset.tokens.AWS_SECRET_ACCESS_KEY
+#    session_token = store.varset.tokens.AWS_SESSION_TOKEN
+#    default_tags   = { stacks-preview-example = "lambda-component-expansion-stack" }
+#  }
+#}
 
 deployment "production" {
   inputs = {
