@@ -10,3 +10,8 @@ output "invoke_arn" {
   description = "The invocation ARN of the function"
   value       = aws_lambda_function.hello_world.invoke_arn
 }
+
+output "function_url" {
+  description = "URL of latest function"
+  value       = aws_lambda_function_url.test_latest.function_url
+}
