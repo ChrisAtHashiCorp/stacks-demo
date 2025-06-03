@@ -14,7 +14,7 @@ module LambdaFunctions
         headers: {
           'Content-Type' => 'text/plain'
         },
-        body: "Hello, #{name}! This is HashiCorp!",
+        body: "Hello, #{name}! This is HashiCorp! Hello Unum!",
       }
     end
   end
